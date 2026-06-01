@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out config
+        uses: actions/checkout@v6
+        with:
+          path: vn-news-config
+
+      - name: Check out platform library
+        uses: actions/checkout@v6
+        with:
+          repository: ${{ github.repository_owner }}/vn-news-platform-lib
+          token: ${{ secrets.WORKSPACE_READ_TOKEN || github.token }}
+          path: vn-news-platform-lib
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v8
+        with:
+          version: "0.11.17"
+          python-version: "3.12"
+          working-directory: vn-news-platform-lib
+
+      - name: Validate runtime config
+        working-directory: vn-news-platform-lib
+        env:
+          VN_NEWS_CONFIG_DIR: ../vn-news-config/configs
+        run: |
+          uv sync --frozen --all-groups
+          uv lock --check
+          uv run python -c "from news_platform.config import load_settings, load_sources; settings = load_settings(); sources = load_sources(settings=settings); assert sources"
