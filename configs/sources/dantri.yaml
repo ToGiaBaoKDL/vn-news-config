@@ -1,0 +1,103 @@
+version: 1
+source_id: dantri
+display_name: Dan Tri
+domain: dantri.com.vn
+enabled: true
+audit_status: confirmed_rss_attribution_required
+crawl:
+  delay_seconds: 10
+  timeout_seconds: 20
+  user_agent_policy: project_default
+feed_discovery:
+  index_url: https://dantri.com.vn/rss.htm
+  feeds:
+    - feed_id: su_kien
+      category: su_kien
+      url: https://dantri.com.vn/rss/su-kien.rss
+    - feed_id: thoi_su
+      category: thoi_su
+      url: https://dantri.com.vn/rss/thoi-su.rss
+    - feed_id: the_gioi
+      category: the_gioi
+      url: https://dantri.com.vn/rss/the-gioi.rss
+    - feed_id: gia_vang
+      category: gia_vang
+      url: https://dantri.com.vn/rss/gia-vang.rss
+    - feed_id: doi_song
+      category: doi_song
+      url: https://dantri.com.vn/rss/doi-song.rss
+    - feed_id: the_thao
+      category: the_thao
+      url: https://dantri.com.vn/rss/the-thao.rss
+    - feed_id: lao_dong_viec_lam
+      category: lao_dong_viec_lam
+      url: https://dantri.com.vn/rss/lao-dong-viec-lam.rss
+    - feed_id: giao_duc
+      category: giao_duc
+      url: https://dantri.com.vn/rss/giao-duc.rss
+    - feed_id: tam_long_nhan_ai
+      category: tam_long_nhan_ai
+      url: https://dantri.com.vn/rss/tam-long-nhan-ai.rss
+    - feed_id: kinh_doanh
+      category: kinh_doanh
+      url: https://dantri.com.vn/rss/kinh-doanh.rss
+    - feed_id: bat_dong_san
+      category: bat_dong_san
+      url: https://dantri.com.vn/rss/bat-dong-san.rss
+    - feed_id: giai_tri
+      category: giai_tri
+      url: https://dantri.com.vn/rss/giai-tri.rss
+    - feed_id: du_lich
+      category: du_lich
+      url: https://dantri.com.vn/rss/du-lich.rss
+    - feed_id: phap_luat
+      category: phap_luat
+      url: https://dantri.com.vn/rss/phap-luat.rss
+    - feed_id: suc_khoe
+      category: suc_khoe
+      url: https://dantri.com.vn/rss/suc-khoe.rss
+    - feed_id: cong_nghe
+      category: cong_nghe
+      url: https://dantri.com.vn/rss/cong-nghe.rss
+    - feed_id: o_to_xe_may
+      category: xe
+      url: https://dantri.com.vn/rss/o-to-xe-may.rss
+    - feed_id: tinh_yeu_gioi_tinh
+      category: tinh_yeu_gioi_tinh
+      url: https://dantri.com.vn/rss/tinh-yeu-gioi-tinh.rss
+    - feed_id: khoa_hoc
+      category: khoa_hoc
+      url: https://dantri.com.vn/rss/khoa-hoc.rss
+    - feed_id: noi_vu
+      category: noi_vu
+      url: https://dantri.com.vn/rss/noi-vu.rss
+    - feed_id: ban_doc
+      category: ban_doc
+      url: https://dantri.com.vn/rss/ban-doc.rss
+    - feed_id: tam_diem
+      category: tam_diem
+      url: https://dantri.com.vn/rss/tam-diem.rss
+    - feed_id: dmagazine
+      category: dmagazine
+      url: https://dantri.com.vn/rss/dmagazine.rss
+    - feed_id: dnews
+      category: dnews
+      url: https://dantri.com.vn/rss/dnews.rss
+    - feed_id: toa_dam_truc_tuyen
+      category: toa_dam_truc_tuyen
+      url: https://dantri.com.vn/rss/toa-dam-truc-tuyen.rss
+    - feed_id: xo_so
+      category: xo_so
+      url: https://dantri.com.vn/rss/xo-so.rss
+    - feed_id: tet
+      category: tet
+      url: https://dantri.com.vn/rss/tet.rss
+    - feed_id: d_buzz
+      category: d_buzz
+      url: https://dantri.com.vn/rss/d-buzz.rss
+    - feed_id: thoi_tiet
+      category: thoi_tiet
+      url: https://dantri.com.vn/rss/thoi-tiet.rss
+article:
+  extractor: html_article
+  attribution_policy: canonical_link_required

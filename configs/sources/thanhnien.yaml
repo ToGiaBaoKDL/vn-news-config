@@ -1,0 +1,106 @@
+version: 1
+source_id: thanhnien
+display_name: Thanh Nien
+domain: thanhnien.vn
+enabled: true
+audit_status: confirmed_rss
+crawl:
+  delay_seconds: 10
+  timeout_seconds: 20
+  user_agent_policy: project_default
+feed_discovery:
+  index_url: https://thanhnien.vn/rss.html
+  feeds:
+    - feed_id: thoi_su
+      category: thoi_su
+      url: https://thanhnien.vn/rss/thoi-su.rss
+    - feed_id: chinh_tri
+      category: chinh_tri
+      url: https://thanhnien.vn/rss/chinh-tri.rss
+    - feed_id: chao_ngay_moi
+      category: chao_ngay_moi
+      url: https://thanhnien.vn/rss/chao-ngay-moi.rss
+    - feed_id: the_gioi
+      category: the_gioi
+      url: https://thanhnien.vn/rss/the-gioi.rss
+    - feed_id: kinh_te
+      category: kinh_te
+      url: https://thanhnien.vn/rss/kinh-te.rss
+    - feed_id: doi_song
+      category: doi_song
+      url: https://thanhnien.vn/rss/doi-song.rss
+    - feed_id: suc_khoe
+      category: suc_khoe
+      url: https://thanhnien.vn/rss/suc-khoe.rss
+    - feed_id: gioi_tre
+      category: gioi_tre
+      url: https://thanhnien.vn/rss/gioi-tre.rss
+    - feed_id: tieu_dung_thong_minh
+      category: tieu_dung_thong_minh
+      url: https://thanhnien.vn/rss/tieu-dung-thong-minh.rss
+    - feed_id: giao_duc
+      category: giao_duc
+      url: https://thanhnien.vn/rss/giao-duc.rss
+    - feed_id: du_lich
+      category: du_lich
+      url: https://thanhnien.vn/rss/du-lich.rss
+    - feed_id: van_hoa
+      category: van_hoa
+      url: https://thanhnien.vn/rss/van-hoa.rss
+    - feed_id: giai_tri
+      category: giai_tri
+      url: https://thanhnien.vn/rss/giai-tri.rss
+    - feed_id: the_thao
+      category: the_thao
+      url: https://thanhnien.vn/rss/the-thao.rss
+    - feed_id: cong_nghe
+      category: cong_nghe
+      url: https://thanhnien.vn/rss/cong-nghe.rss
+    - feed_id: xe
+      category: xe
+      url: https://thanhnien.vn/rss/xe.rss
+    - feed_id: thoi_trang_tre
+      category: thoi_trang_tre
+      url: https://thanhnien.vn/rss/thoi-trang-tre.rss
+    - feed_id: ban_doc
+      category: ban_doc
+      url: https://thanhnien.vn/rss/ban-doc.rss
+    - feed_id: rao_vat
+      category: rao_vat
+      url: https://thanhnien.vn/rss/rao-vat.rss
+    - feed_id: dien_dan
+      category: dien_dan
+      url: https://thanhnien.vn/rss/dien-dan.rss
+    - feed_id: nhat_ky_tet_viet
+      category: nhat_ky_tet_viet
+      url: https://thanhnien.vn/rss/nhat-ky-tet-viet.rss
+    - feed_id: magazine
+      category: magazine
+      url: https://thanhnien.vn/rss/magazine.rss
+    - feed_id: cung_con_di_tiep_cuoc_doi
+      category: cung_con_di_tiep_cuoc_doi
+      url: https://thanhnien.vn/rss/cung-con-di-tiep-cuoc-doi.rss
+    - feed_id: ban_can_biet
+      category: ban_can_biet
+      url: https://thanhnien.vn/rss/ban-can-biet.rss
+    - feed_id: cai_chinh
+      category: cai_chinh
+      url: https://thanhnien.vn/rss/cai-chinh.rss
+    - feed_id: blog_phong_vien
+      category: blog_phong_vien
+      url: https://thanhnien.vn/rss/blog-phong-vien.rss
+    - feed_id: toi_viet
+      category: toi_viet
+      url: https://thanhnien.vn/rss/toi-viet.rss
+    - feed_id: viec_lam
+      category: viec_lam
+      url: https://thanhnien.vn/rss/viec-lam.rss
+    - feed_id: tno
+      category: tno
+      url: https://thanhnien.vn/rss/tno.rss
+    - feed_id: thi_truong
+      category: thi_truong
+      url: https://thanhnien.vn/rss/thi-truong.rss
+article:
+  extractor: html_article
+  attribution_policy: canonical_link_required

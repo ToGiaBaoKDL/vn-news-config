@@ -1,0 +1,70 @@
+version: 1
+source_id: vnexpress
+display_name: VnExpress
+domain: vnexpress.net
+enabled: true
+audit_status: confirmed_rss
+crawl:
+  delay_seconds: 5
+  timeout_seconds: 20
+  user_agent_policy: project_default
+feed_discovery:
+  index_url: https://vnexpress.net/rss
+  feeds:
+    - feed_id: the_gioi
+      category: the_gioi
+      url: https://vnexpress.net/rss/the-gioi.rss
+    - feed_id: thoi_su
+      category: thoi_su
+      url: https://vnexpress.net/rss/thoi-su.rss
+    - feed_id: kinh_doanh
+      category: kinh_doanh
+      url: https://vnexpress.net/rss/kinh-doanh.rss
+    - feed_id: giai_tri
+      category: giai_tri
+      url: https://vnexpress.net/rss/giai-tri.rss
+    - feed_id: the_thao
+      category: the_thao
+      url: https://vnexpress.net/rss/the-thao.rss
+    - feed_id: phap_luat
+      category: phap_luat
+      url: https://vnexpress.net/rss/phap-luat.rss
+    - feed_id: giao_duc
+      category: giao_duc
+      url: https://vnexpress.net/rss/giao-duc.rss
+    - feed_id: goc_nhin
+      category: goc_nhin
+      url: https://vnexpress.net/rss/goc-nhin.rss
+    - feed_id: bat_dong_san
+      category: bat_dong_san
+      url: https://vnexpress.net/rss/bat-dong-san.rss
+    - feed_id: suc_khoe
+      category: suc_khoe
+      url: https://vnexpress.net/rss/suc-khoe.rss
+    - feed_id: gia_dinh
+      category: doi_song
+      url: https://vnexpress.net/rss/gia-dinh.rss
+    - feed_id: du_lich
+      category: du_lich
+      url: https://vnexpress.net/rss/du-lich.rss
+    - feed_id: khoa_hoc_cong_nghe
+      category: khoa_hoc_cong_nghe
+      url: https://vnexpress.net/rss/khoa-hoc-cong-nghe.rss
+    - feed_id: oto_xe_may
+      category: xe
+      url: https://vnexpress.net/rss/oto-xe-may.rss
+    - feed_id: y_kien
+      category: y_kien
+      url: https://vnexpress.net/rss/y-kien.rss
+    - feed_id: tam_su
+      category: tam_su
+      url: https://vnexpress.net/rss/tam-su.rss
+    - feed_id: vne_go
+      category: vne_go
+      url: https://vnexpress.net/rss/vne-go.rss
+    - feed_id: thu_gian
+      category: thu_gian
+      url: https://vnexpress.net/rss/thu-gian.rss
+article:
+  extractor: html_article
+  attribution_policy: canonical_link_required

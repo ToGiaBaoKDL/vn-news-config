@@ -1,0 +1,67 @@
+version: 1
+source_id: tuoitre
+display_name: Tuoi Tre
+domain: tuoitre.vn
+enabled: true
+audit_status: confirmed_rss_attribution_required
+crawl:
+  delay_seconds: 10
+  timeout_seconds: 20
+  user_agent_policy: project_default
+feed_discovery:
+  index_url: https://tuoitre.vn/rss.htm
+  feeds:
+    - feed_id: thoi_su
+      category: thoi_su
+      url: https://tuoitre.vn/rss/thoi-su.rss
+    - feed_id: the_gioi
+      category: the_gioi
+      url: https://tuoitre.vn/rss/the-gioi.rss
+    - feed_id: phap_luat
+      category: phap_luat
+      url: https://tuoitre.vn/rss/phap-luat.rss
+    - feed_id: kinh_doanh
+      category: kinh_doanh
+      url: https://tuoitre.vn/rss/kinh-doanh.rss
+    - feed_id: nhip_song_so
+      category: cong_nghe
+      url: https://tuoitre.vn/rss/nhip-song-so.rss
+    - feed_id: xe
+      category: xe
+      url: https://tuoitre.vn/rss/xe.rss
+    - feed_id: nhip_song_tre
+      category: nhip_song_tre
+      url: https://tuoitre.vn/rss/nhip-song-tre.rss
+    - feed_id: van_hoa
+      category: van_hoa
+      url: https://tuoitre.vn/rss/van-hoa.rss
+    - feed_id: giai_tri
+      category: giai_tri
+      url: https://tuoitre.vn/rss/giai-tri.rss
+    - feed_id: the_thao
+      category: the_thao
+      url: https://tuoitre.vn/rss/the-thao.rss
+    - feed_id: giao_duc
+      category: giao_duc
+      url: https://tuoitre.vn/rss/giao-duc.rss
+    - feed_id: khoa_hoc
+      category: khoa_hoc
+      url: https://tuoitre.vn/rss/khoa-hoc.rss
+    - feed_id: suc_khoe
+      category: suc_khoe
+      url: https://tuoitre.vn/rss/suc-khoe.rss
+    - feed_id: gia_that
+      category: gia_that
+      url: https://tuoitre.vn/rss/gia-that.rss
+    - feed_id: thu_gian
+      category: thu_gian
+      url: https://tuoitre.vn/rss/thu-gian.rss
+    - feed_id: ban_doc
+      category: ban_doc
+      url: https://tuoitre.vn/rss/ban-doc.rss
+    - feed_id: du_lich
+      category: du_lich
+      url: https://tuoitre.vn/rss/du-lich.rss
+article:
+  extractor: html_article
+  attribution_policy: canonical_link_required

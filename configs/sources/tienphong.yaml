@@ -1,0 +1,82 @@
+version: 1
+source_id: tienphong
+display_name: Tien Phong
+domain: tienphong.vn
+enabled: true
+audit_status: confirmed_rss_attribution_required
+crawl:
+  delay_seconds: 10
+  timeout_seconds: 20
+  user_agent_policy: browser_compatible
+feed_discovery:
+  index_url: https://tienphong.vn/rss.html
+  feeds:
+    - feed_id: xa_hoi
+      category: xa_hoi
+      url: https://tienphong.vn/rss/xa-hoi-2.rss
+    - feed_id: kinh_te
+      category: kinh_te
+      url: https://tienphong.vn/rss/kinh-te-3.rss
+    - feed_id: song_xanh
+      category: song_xanh
+      url: https://tienphong.vn/rss/song-xanh-441.rss
+    - feed_id: dia_oc
+      category: bat_dong_san
+      url: https://tienphong.vn/rss/dia-oc-166.rss
+    - feed_id: suc_khoe
+      category: suc_khoe
+      url: https://tienphong.vn/rss/suc-khoe-210.rss
+    - feed_id: the_gioi
+      category: the_gioi
+      url: https://tienphong.vn/rss/the-gioi-5.rss
+    - feed_id: gioi_tre
+      category: gioi_tre
+      url: https://tienphong.vn/rss/gioi-tre-4.rss
+    - feed_id: phap_luat
+      category: phap_luat
+      url: https://tienphong.vn/rss/phap-luat-12.rss
+    - feed_id: the_thao
+      category: the_thao
+      url: https://tienphong.vn/rss/the-thao-11.rss
+    - feed_id: hanh_trang_nguoi_linh
+      category: hanh_trang_nguoi_linh
+      url: https://tienphong.vn/rss/hanh-trang-nguoi-linh-182.rss
+    - feed_id: xe
+      category: xe
+      url: https://tienphong.vn/rss/xe-113.rss
+    - feed_id: van_hoa
+      category: van_hoa
+      url: https://tienphong.vn/rss/van-hoa-7.rss
+    - feed_id: giai_tri
+      category: giai_tri
+      url: https://tienphong.vn/rss/giai-tri-36.rss
+    - feed_id: giao_duc
+      category: giao_duc
+      url: https://tienphong.vn/rss/giao-duc-71.rss
+    - feed_id: khoa_hoc
+      category: khoa_hoc
+      url: https://tienphong.vn/rss/khoa-hoc-45.rss
+    - feed_id: hoa_hau
+      category: hoa_hau
+      url: https://tienphong.vn/rss/hoa-hau-253.rss
+    - feed_id: ban_doc
+      category: ban_doc
+      url: https://tienphong.vn/rss/ban-doc-15.rss
+    - feed_id: toi_nghi
+      category: toi_nghi
+      url: https://tienphong.vn/rss/toi-nghi-273.rss
+    - feed_id: hang_khong_du_lich
+      category: hang_khong_du_lich
+      url: https://tienphong.vn/rss/hang-khong-du-lich-220.rss
+    - feed_id: nhip_song_thu_do
+      category: nhip_song_thu_do
+      url: https://tienphong.vn/rss/nhip-song-thu-do-242.rss
+    - feed_id: nhip_song_phuong_nam
+      category: nhip_song_phuong_nam
+      url: https://tienphong.vn/rss/nhip-song-phuong-nam-408.rss
+    - feed_id: tet_viet
+      category: tet_viet
+      url: https://tienphong.vn/rss/tet-viet-416.rss
+article:
+  extractor: html_article
+  attribution_policy: canonical_link_required

@@ -1,0 +1,68 @@
+version: 1
+project:
+  name: vn-news-intelligence
+  default_environment: local
+  timezone: Asia/Ho_Chi_Minh
+
+crawl:
+  max_feed_bytes: 5242880
+  max_article_bytes: 10485760
+  retry:
+    attempts: 3
+    backoff_seconds: 1
+  user_agents:
+    project_default: "VNNewsIntelligenceBot/0.1"
+    browser_compatible: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
+
+storage:
+  provider: seaweedfs_s3
+  endpoint_url: http://seaweedfs-s3:8333
+  warehouse_prefix: warehouse
+  payload_prefix: payloads
+  buckets:
+    landing: tgb-prod-landing-a7k3p9
+    curated: tgb-prod-curated-m4q8x2
+    analytics: tgb-prod-analytics-r9v2c6
+    logs: tgb-prod-logs-h6d4n8
+  payload_files:
+    compression: zstd
+  iceberg:
+    catalog: polaris
+    catalog_uri: http://polaris:8181/api/catalog
+    table_properties:
+      format-version: "2"
+      write.format.default: parquet
+      write.parquet.compression-codec: zstd
+      write.target-file-size-bytes: 536870912
+      write.distribution-mode: hash
+
+event_bus:
+  provider: redpanda
+  bootstrap_servers: redpanda:9092
+  schema_registry_url: http://redpanda:8081
+  topics:
+    feed_item_discovered:
+      name: news.feed_item.discovered.v2
+      partitions: 3
+      retention_ms: 604800000
+    article_fetch_requested:
+      name: news.article.fetch_requested.v2
+      partitions: 3
+      retention_ms: 604800000
+    article_fetched:
+      name: news.article.fetched.v2
+      partitions: 3
+      retention_ms: 604800000
+    article_extracted:
+      name: news.article.extracted.v2
+      partitions: 3
+      retention_ms: 604800000
+    dlq:
+      name: news.dlq.v1
+      partitions: 1
+      retention_ms: 2592000000
+
+retention:
+  landing_payload_days: 30
+  landing_table_days: 90
+  logs_days: 30

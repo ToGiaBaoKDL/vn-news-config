@@ -1,0 +1,58 @@
+version: 1
+source_id: genk
+display_name: GenK
+domain: genk.vn
+enabled: true
+audit_status: confirmed_rss_attribution_required
+crawl:
+  delay_seconds: 10
+  timeout_seconds: 20
+  user_agent_policy: browser_compatible
+feed_discovery:
+  index_url: https://genk.vn/index.rss
+  feeds:
+    - feed_id: mobile
+      category: mobile
+      url: https://genk.vn/rss/mobile.rss
+    - feed_id: tin_ict
+      category: tin_ict
+      url: https://genk.vn/rss/tin-ict.rss
+    - feed_id: internet
+      category: internet
+      url: https://genk.vn/rss/internet.rss
+    - feed_id: kham_pha
+      category: kham_pha
+      url: https://genk.vn/rss/kham-pha.rss
+    - feed_id: xem_mua_luon
+      category: xem_mua_luon
+      url: https://genk.vn/rss/xem-mua-luon.rss
+    - feed_id: tra_da_cong_nghe
+      category: tra_da_cong_nghe
+      url: https://genk.vn/rss/tra-da-cong-nghe.rss
+    - feed_id: thu_thuat
+      category: thu_thuat
+      url: https://genk.vn/rss/thu-thuat.rss
+    - feed_id: song
+      category: song
+      url: https://genk.vn/rss/song.rss
+    - feed_id: apps_games
+      category: apps_games
+      url: https://genk.vn/rss/apps-games.rss
+    - feed_id: do_choi_so
+      category: do_choi_so
+      url: https://genk.vn/rss/do-choi-so.rss
+    - feed_id: gia_dung
+      category: gia_dung
+      url: https://genk.vn/rss/gia-dung.rss
+    - feed_id: blockchain
+      category: blockchain
+      url: https://genk.vn/rss/blockchain.rss
+    - feed_id: xe
+      category: xe
+      url: https://genk.vn/rss/xe.rss
+    - feed_id: ai
+      category: ai
+      url: https://genk.vn/rss/ai.rss
+article:
+  extractor: html_article
+  attribution_policy: canonical_link_required

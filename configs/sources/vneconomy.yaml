@@ -1,0 +1,61 @@
+version: 1
+source_id: vneconomy
+display_name: VnEconomy
+domain: vneconomy.vn
+enabled: true
+audit_status: confirmed_rss_attribution_required
+crawl:
+  delay_seconds: 10
+  timeout_seconds: 20
+  user_agent_policy: project_default
+feed_discovery:
+  index_url: https://vneconomy.vn/rss.html
+  feeds:
+    - feed_id: kinh_te_xanh
+      category: kinh_te_xanh
+      url: https://vneconomy.vn/kinh-te-xanh.rss
+    - feed_id: tieu_diem
+      category: tieu_diem
+      url: https://vneconomy.vn/tieu-diem.rss
+    - feed_id: tai_chinh
+      category: tai_chinh
+      url: https://vneconomy.vn/tai-chinh.rss
+    - feed_id: chung_khoan
+      category: chung_khoan
+      url: https://vneconomy.vn/chung-khoan.rss
+    - feed_id: kinh_te_so
+      category: kinh_te_so
+      url: https://vneconomy.vn/kinh-te-so.rss
+    - feed_id: dau_tu_ha_tang
+      category: dau_tu_ha_tang
+      url: https://vneconomy.vn/dau-tu-ha-tang.rss
+    - feed_id: dia_oc
+      category: bat_dong_san
+      url: https://vneconomy.vn/dia-oc.rss
+    - feed_id: thi_truong
+      category: thi_truong
+      url: https://vneconomy.vn/thi-truong.rss
+    - feed_id: kinh_te_the_gioi
+      category: kinh_te_the_gioi
+      url: https://vneconomy.vn/kinh-te-the-gioi.rss
+    - feed_id: nhip_cau_doanh_nghiep
+      category: doanh_nghiep
+      url: https://vneconomy.vn/nhip-cau-doanh-nghiep.rss
+    - feed_id: an_pham
+      category: an_pham
+      url: https://vneconomy.vn/an-pham.rss
+    - feed_id: dau_tu
+      category: dau_tu
+      url: https://vneconomy.vn/dau-tu.rss
+    - feed_id: tieu_dung
+      category: tieu_dung
+      url: https://vneconomy.vn/tieu-dung.rss
+    - feed_id: cong_nghe_startup
+      category: cong_nghe_startup
+      url: https://vneconomy.vn/cong-nghe-startup.rss
+    - feed_id: dan_sinh
+      category: dan_sinh
+      url: https://vneconomy.vn/dan-sinh.rss
+article:
+  extractor: html_article
+  attribution_policy: canonical_link_required

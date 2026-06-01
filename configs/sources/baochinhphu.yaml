@@ -1,0 +1,25 @@
+version: 1
+source_id: baochinhphu
+display_name: Bao Chinh Phu
+domain: baochinhphu.vn
+enabled: true
+audit_status: confirmed_rss
+crawl:
+  delay_seconds: 10
+  timeout_seconds: 20
+  user_agent_policy: project_default
+feed_discovery:
+  index_url: https://baochinhphu.vn/rss
+  feeds:
+    - feed_id: thoi_su
+      category: thoi_su
+      url: https://baochinhphu.vn/thoi-su.rss
+    - feed_id: kinh_te
+      category: kinh_te
+      url: https://baochinhphu.vn/kinh-te.rss
+    - feed_id: xa_hoi
+      category: xa_hoi
+      url: https://baochinhphu.vn/xa-hoi.rss
+article:
+  extractor: html_article
+  attribution_policy: canonical_link_required

@@ -1,0 +1,61 @@
+version: 1
+source_id: cafef
+display_name: CafeF
+domain: cafef.vn
+enabled: true
+audit_status: confirmed_rss_attribution_required
+crawl:
+  delay_seconds: 10
+  timeout_seconds: 20
+  user_agent_policy: browser_compatible
+feed_discovery:
+  index_url: https://cafef.vn/index.rss
+  feeds:
+    - feed_id: xa_hoi
+      category: xa_hoi
+      url: https://cafef.vn/xa-hoi.rss
+    - feed_id: thi_truong_chung_khoan
+      category: chung_khoan
+      url: https://cafef.vn/thi-truong-chung-khoan.rss
+    - feed_id: bat_dong_san
+      category: bat_dong_san
+      url: https://cafef.vn/bat-dong-san.rss
+    - feed_id: doanh_nghiep
+      category: doanh_nghiep
+      url: https://cafef.vn/doanh-nghiep.rss
+    - feed_id: tai_chinh_ngan_hang
+      category: tai_chinh_ngan_hang
+      url: https://cafef.vn/tai-chinh-ngan-hang.rss
+    - feed_id: tai_chinh_quoc_te
+      category: tai_chinh_quoc_te
+      url: https://cafef.vn/tai-chinh-quoc-te.rss
+    - feed_id: smart_money
+      category: smart_money
+      url: https://cafef.vn/smart-money.rss
+    - feed_id: vi_mo_dau_tu
+      category: vi_mo_dau_tu
+      url: https://cafef.vn/vi-mo-dau-tu.rss
+    - feed_id: kinh_te_so
+      category: kinh_te_so
+      url: https://cafef.vn/kinh-te-so.rss
+    - feed_id: thi_truong
+      category: thi_truong
+      url: https://cafef.vn/thi-truong.rss
+    - feed_id: song
+      category: song
+      url: https://cafef.vn/song.rss
+    - feed_id: lifestyle
+      category: lifestyle
+      url: https://cafef.vn/lifestyle.rss
+    - feed_id: hoi_nghi_hoi_thao
+      category: hoi_nghi_hoi_thao
+      url: https://cafef.vn/hoi-nghi-hoi-thao.rss
+    - feed_id: doanh_nghiep_gioi_thieu
+      category: doanh_nghiep_gioi_thieu
+      url: https://cafef.vn/doanh-nghiep-gioi-thieu.rss
+    - feed_id: tim_viec_lam
+      category: tim_viec_lam
+      url: https://cafef.vn/tim-viec-lam.rss
+article:
+  extractor: html_article
+  attribution_policy: canonical_link_required
