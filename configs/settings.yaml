@@ -1,7 +1,6 @@
 version: 1
 project:
   name: vn-news-intelligence
-  default_environment: local
   timezone: Asia/Ho_Chi_Minh
 
 crawl:
@@ -46,7 +45,7 @@ event_bus:
       partitions: 3
       retention_ms: 604800000
     article_fetch_requested:
-      name: news.article.fetch_requested.v2
+      name: news.article.fetch_requested.v3
       partitions: 3
       retention_ms: 604800000
     article_fetched:
