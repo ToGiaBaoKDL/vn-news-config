@@ -16,7 +16,6 @@ crawl:
 storage:
   provider: seaweedfs_s3
   endpoint_url: http://seaweedfs-s3:8333
-  warehouse_prefix: warehouse
   payload_prefix: payloads
   buckets:
     landing: tgb-prod-landing-a7k3p9
@@ -24,15 +23,6 @@ storage:
     analytics: tgb-prod-analytics-r9v2c6
   payload_files:
     compression: zstd
-  iceberg:
-    catalog: polaris
-    catalog_uri: http://polaris:8181/api/catalog
-    table_properties:
-      format-version: "2"
-      write.format.default: parquet
-      write.parquet.compression-codec: zstd
-      write.target-file-size-bytes: 536870912
-      write.distribution-mode: hash
 
 event_bus:
   provider: redpanda
@@ -59,7 +49,3 @@ event_bus:
       name: news.dlq.v1
       partitions: 1
       retention_ms: 2592000000
-
-retention:
-  landing_payload_days: 30
-  landing_table_days: 90
