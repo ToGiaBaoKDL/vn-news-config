@@ -22,7 +22,6 @@ storage:
     landing: tgb-prod-landing-a7k3p9
     curated: tgb-prod-curated-m4q8x2
     analytics: tgb-prod-analytics-r9v2c6
-    logs: tgb-prod-logs-h6d4n8
   payload_files:
     compression: zstd
   iceberg:
@@ -64,4 +63,3 @@ event_bus:
 retention:
   landing_payload_days: 30
   landing_table_days: 90
-  logs_days: 30
