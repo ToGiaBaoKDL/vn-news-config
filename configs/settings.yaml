@@ -37,19 +37,24 @@ event_bus:
       name: news.feed_item.discovered.v2
       partitions: 3
       retention_ms: 604800000
+      retention_bytes: 268435456
     article_fetch_requested:
       name: news.article.fetch_requested.v3
       partitions: 3
       retention_ms: 604800000
+      retention_bytes: 268435456
     article_fetched:
       name: news.article.fetched.v2
       partitions: 3
       retention_ms: 604800000
+      retention_bytes: 536870912
     article_extracted:
       name: news.article.extracted.v2
       partitions: 3
       retention_ms: 604800000
+      retention_bytes: 2147483648
     dlq:
       name: news.dlq.v1
       partitions: 1
       retention_ms: 2592000000
+      retention_bytes: 536870912
