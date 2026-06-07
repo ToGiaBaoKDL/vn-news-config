@@ -101,3 +101,5 @@ feed_discovery:
 article:
   extractor: html_article
   attribution_policy: canonical_link_required
+  blocked_status_codes:
+    - 428
