@@ -28,6 +28,10 @@ event_bus:
   provider: redpanda
   bootstrap_servers: redpanda:9092
   schema_registry_url: http://redpanda:8081
+  consumer_retry:
+    base_delay_seconds: 1
+    max_delay_seconds: 60
+    jitter_seconds: 1
   topics:
     feed_item_discovered:
       name: news.feed_item.discovered.v2
