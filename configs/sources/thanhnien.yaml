@@ -65,9 +65,6 @@ feed_discovery:
     - feed_id: ban_doc
       category: ban_doc
       url: https://thanhnien.vn/rss/ban-doc.rss
-    - feed_id: rao_vat
-      category: rao_vat
-      url: https://thanhnien.vn/rss/rao-vat.rss
     - feed_id: dien_dan
       category: dien_dan
       url: https://thanhnien.vn/rss/dien-dan.rss
@@ -83,18 +80,12 @@ feed_discovery:
     - feed_id: ban_can_biet
       category: ban_can_biet
       url: https://thanhnien.vn/rss/ban-can-biet.rss
-    - feed_id: cai_chinh
-      category: cai_chinh
-      url: https://thanhnien.vn/rss/cai-chinh.rss
     - feed_id: blog_phong_vien
       category: blog_phong_vien
       url: https://thanhnien.vn/rss/blog-phong-vien.rss
     - feed_id: toi_viet
       category: toi_viet
       url: https://thanhnien.vn/rss/toi-viet.rss
-    - feed_id: viec_lam
-      category: viec_lam
-      url: https://thanhnien.vn/rss/viec-lam.rss
     - feed_id: tno
       category: tno
       url: https://thanhnien.vn/rss/tno.rss

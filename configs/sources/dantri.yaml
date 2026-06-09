@@ -20,9 +20,6 @@ feed_discovery:
     - feed_id: the_gioi
       category: the_gioi
       url: https://dantri.com.vn/rss/the-gioi.rss
-    - feed_id: gia_vang
-      category: gia_vang
-      url: https://dantri.com.vn/rss/gia-vang.rss
     - feed_id: doi_song
       category: doi_song
       url: https://dantri.com.vn/rss/doi-song.rss
@@ -86,9 +83,6 @@ feed_discovery:
     - feed_id: toa_dam_truc_tuyen
       category: toa_dam_truc_tuyen
       url: https://dantri.com.vn/rss/toa-dam-truc-tuyen.rss
-    - feed_id: xo_so
-      category: xo_so
-      url: https://dantri.com.vn/rss/xo-so.rss
     - feed_id: tet
       category: tet
       url: https://dantri.com.vn/rss/tet.rss
