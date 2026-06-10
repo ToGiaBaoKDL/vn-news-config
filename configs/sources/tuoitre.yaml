@@ -73,6 +73,7 @@ article:
       - .link-inline-content
       - .readmore-body-box
       - .article-relate
+      - div[type="RelatedOneNews"]
       - .OneNewsTitle
       - .VCObjectBoxRelatedNewsItemSapo
       - .box-author-detail

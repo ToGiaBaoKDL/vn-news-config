@@ -65,6 +65,8 @@ article:
       - .ct-edtior-web
     exclude_selectors:
       - .news-general
+      - .featured-row-revert_item
+      - .list-detail-revert_item
       - .highlight-ai_content
       - .form-content
       - .list-share-detail
