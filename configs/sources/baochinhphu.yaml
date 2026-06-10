@@ -30,8 +30,6 @@ article:
       - .detail-content.afcbc-body
       - .detail-content
     exclude_selectors:
-      - .kbwscwlrl-content
       - .detail-like-fb
-      - .detail-tag
       - '#loadDetailBottom'
     min_text_chars: 120

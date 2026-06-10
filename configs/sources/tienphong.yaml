@@ -85,8 +85,6 @@ article:
       - .article__body.cms-body
       - .article__body
     exclude_selectors:
-      - .article-relate
-      - .related-news
       - .article-footer
       - .article__tag
       - '[id^="sdaWeb_SdaArticleAfter"]'

@@ -61,8 +61,6 @@ article:
       - '#ContentDetail'
       - .knc-content.detail-content
     exclude_selectors:
-      - .link-source-detail
-      - .ads_detail
       - .news-same-zone
       - '#genk_detail_tin_cung_muc'
       - '#genk_detail_b2'

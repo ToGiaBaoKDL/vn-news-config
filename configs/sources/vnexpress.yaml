@@ -78,5 +78,4 @@ article:
       - .related_news
       - .box_embed_video
       - .embed_video
-      - .gg-news
     min_text_chars: 120

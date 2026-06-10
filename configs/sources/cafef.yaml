@@ -67,7 +67,5 @@ article:
       - '#cafef_detail_relatednewsbox'
       - '#listNewsInContent'
       - '#aiservice-lastest-news'
-      - .link-source-detail
-      - .tagdetail
       - .tincungmucdetail
     min_text_chars: 120
