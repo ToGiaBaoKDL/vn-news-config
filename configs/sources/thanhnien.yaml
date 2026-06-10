@@ -95,3 +95,15 @@ feed_discovery:
 article:
   extractor: html_article
   attribution_policy: canonical_link_required
+  extraction:
+    content_selectors:
+      - .detail-content.afcbc-body
+      - .detail-content
+    exclude_selectors:
+      - .seo-suggest-link
+      - .link-inline-content
+      - .PhotoCMS_Author
+      - '#tn_detail_foryou1'
+      - '#box-detail-related'
+      - '#tn_detail_tinlienquan'
+    min_text_chars: 120

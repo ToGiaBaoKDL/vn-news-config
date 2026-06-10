@@ -56,3 +56,14 @@ feed_discovery:
 article:
   extractor: html_article
   attribution_policy: canonical_link_required
+  extraction:
+    content_selectors:
+      - '#ContentDetail'
+      - .knc-content.detail-content
+    exclude_selectors:
+      - .link-source-detail
+      - .ads_detail
+      - .news-same-zone
+      - '#genk_detail_tin_cung_muc'
+      - '#genk_detail_b2'
+    min_text_chars: 120

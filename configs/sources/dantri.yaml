@@ -97,3 +97,16 @@ article:
   attribution_policy: canonical_link_required
   blocked_status_codes:
     - 428
+  extraction:
+    content_selectors:
+      - '#desktop-in-article'
+      - '[data-slot="content"]'
+    exclude_selectors:
+      - '[data-content-name="article-related"]'
+      - '[data-content-name="article-popular"]'
+      - .article-business
+      - '#desktop-in-article-1'
+      - '#desktop-native-article-1'
+      - '#desktop-article-bottom'
+      - '#desktop-native-article-2'
+    min_text_chars: 120

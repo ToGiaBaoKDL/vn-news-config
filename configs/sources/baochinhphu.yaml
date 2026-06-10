@@ -25,3 +25,13 @@ article:
   attribution_policy: canonical_link_required
   approved_redirect_domains:
     - thanglong.chinhphu.vn
+  extraction:
+    content_selectors:
+      - .detail-content.afcbc-body
+      - .detail-content
+    exclude_selectors:
+      - .kbwscwlrl-content
+      - .detail-like-fb
+      - .detail-tag
+      - '#loadDetailBottom'
+    min_text_chars: 120

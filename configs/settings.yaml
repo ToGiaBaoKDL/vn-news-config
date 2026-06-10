@@ -49,7 +49,7 @@ event_bus:
       retention_ms: 604800000
       retention_bytes: 536870912
     article_extracted:
-      name: news.article.extracted.v2
+      name: news.article.extracted.v3
       partitions: 3
       retention_ms: 604800000
       retention_bytes: 2147483648

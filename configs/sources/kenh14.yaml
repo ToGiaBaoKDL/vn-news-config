@@ -59,3 +59,16 @@ feed_discovery:
 article:
   extractor: html_article
   attribution_policy: canonical_link_required
+  extraction:
+    content_selectors:
+      - .detail-content.afcbc-body
+      - .detail-content
+    exclude_selectors:
+      - .knc-relate-wrapper
+      - '#kenh14_detail_relatesnews'
+      - '#kenh14_detail_relatednewsboxlink'
+      - '#aiservice-related-news-box-link'
+      - .link-source-detail
+      - .ads_detail
+      - '#k14_detail_tag'
+    min_text_chars: 120
