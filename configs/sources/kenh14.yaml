@@ -2,7 +2,7 @@ version: 1
 source_id: kenh14
 display_name: Kenh14
 domain: kenh14.vn
-enabled: true
+enabled: false
 audit_status: confirmed_rss_attribution_required
 crawl:
   delay_seconds: 10
