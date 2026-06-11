@@ -35,6 +35,15 @@ event_bus:
   schema_id_cache_ttl_seconds: 300
   inline_event_limits:
     article_extracted_max_bytes: 524288
+  metrics:
+    namespace: vn_news
+    collector_group_id: pipeline_metrics_collector
+    flush_interval_seconds: 60
+    poll_timeout_seconds: 5
+    source_failure_min_rejections: 3
+    consumer_lag_groups:
+      - article_fetcher
+      - article_extractor
   topics:
     feed_item_discovered:
       name: news.feed_item.discovered.v2
@@ -56,6 +65,11 @@ event_bus:
       partitions: 3
       retention_ms: 604800000
       retention_bytes: 2147483648
+    pipeline_metric:
+      name: news.pipeline.metric_observed.v1
+      partitions: 1
+      retention_ms: 604800000
+      retention_bytes: 134217728
     dlq:
       name: news.dlq.v1
       partitions: 1
