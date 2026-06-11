@@ -32,6 +32,9 @@ event_bus:
     base_delay_seconds: 1
     max_delay_seconds: 60
     jitter_seconds: 1
+  schema_id_cache_ttl_seconds: 300
+  inline_event_limits:
+    article_extracted_max_bytes: 524288
   topics:
     feed_item_discovered:
       name: news.feed_item.discovered.v2
