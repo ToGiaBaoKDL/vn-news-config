@@ -39,4 +39,4 @@ jobs:
         run: |
           uv sync --frozen --all-groups
           uv lock --check
-          uv run python -c "from news_platform.config import load_settings, load_sources; settings = load_settings(); sources = load_sources(settings=settings); assert sources"
+          uv run python -c "from news_platform.config import load_pipeline_definition, load_settings, load_sources; settings = load_settings(); sources = load_sources(settings=settings); pipeline = load_pipeline_definition('article_extracted_to_curated', settings=settings); assert sources and pipeline"

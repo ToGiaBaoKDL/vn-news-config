@@ -24,6 +24,10 @@ storage:
   payload_files:
     compression: zstd
 
+lakehouse:
+  catalog_name: vn_news
+  warehouse_prefix: warehouse
+
 event_bus:
   provider: redpanda
   bootstrap_servers: redpanda:9092

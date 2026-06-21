@@ -1,0 +1,30 @@
+version: 1
+name: article_extracted_to_curated
+input_topic_key: article_extracted
+checkpoint_name: article_extracted_to_curated
+
+spark:
+  driver_memory: 1g
+  executor_memory: 4g
+  executor_cores: 1
+  total_executor_cores: 1
+  shuffle_partitions: 3
+
+outputs:
+  article_version:
+    kind: article_version
+    table: curated.news_article_version
+    dedupe_order_fields:
+      - event_time
+      - event_id
+  article:
+    kind: article
+    table: curated.news_article
+    dedupe_order_fields:
+      - latest_event_time
+      - latest_event_id
+  pipeline_error:
+    kind: pipeline_error
+    table: curated.pipeline_error
+
+audit_table: curated.pipeline_run_audit
